@@ -13,24 +13,24 @@
 {%block page_header%}{%endblock%}
 
 {%block content%}
-<div class="alert alert-warning w-96 float-right animate-pulse">
+<!--<div class="alert alert-warning w-96 float-right animate-pulse">
   <span class="font-medium ml-5">Join our discord to stay connected on updates & new features!</span>
   <div>
     <a href="https://discord.gg/9unhWAqadg" class="btn btn-sm btn-primary">Join</a>
   </div>
-</div>
+</div>-->
 <div class="mt-12">
   <div class="flex-col">
     <div>
       <div class="flex flex-row">
         <div><span class="text-3xl" id="emoji">👋</span></div>
-        <div class="text-4xl font-medium  ml-2">Welcome</div>
+        <div class="text-4xl font-medium  ml-2">Bienvenido</div>
       </div>
-      <p class="py-6 w-1/2 font-medium ">{{config.APP_NAME}} is a governance risk and compliance platform. <a class="text-primary underline underline-offset-4 hover:text-secondary" href="{{config.DOC_LINK}}">Please check here</a> for more information and/or questions.</p>
-      <div class="flex flex-row gap-x-6 mb-14">
+      <p class="py-6 w-1/2 font-medium ">{{config.APP_NAME}} es una plataforma de cumplimiento. <!--<a class="text-primary underline underline-offset-4 hover:text-secondary" href="{{config.DOC_LINK}}">Please check here</a> for more information and/or questions.--></p>
+      <!--<div class="flex flex-row gap-x-6 mb-14">
         <a class="text-primary font-semibold underline underline-offset-4 hover:text-secondary" href="https://discord.gg/9unhWAqadg">Discord</a>
         <a class="text-primary font-semibold underline underline-offset-4 hover:text-secondary" href="https://github.com/bmarsh9/gapps">Github</a>
-      </div>
+      </div>-->
 <div class="flex flex-row gap-x-4">
 {%if "vendor" in user_roles%}
   <a href="{{url_for("main.questionnaires")}}" class="btn gap-2 btn-sm  shadow-lg btn-ghost font-semibold text-sm capitalize">
